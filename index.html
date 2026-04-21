@@ -1,122 +1,216 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Namify - 3D Name Art Generator</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <title>Namify - Luxury 3D Name Art</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
+    
+    <script>
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "gold-main": "#D4AF37",
-                        "gold-light": "#F2CA50",
-                        "gold-dark": "#996515"
+                    colors: {
+                        'gold-1': '#FFD700',
+                        'gold-2': '#FFB300',
+                        'dark-bg': '#0F0F0F',
+                        'dark-card': '#1A1A1A',
                     },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Inter"]
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Poppins', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
+
     <style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        body { background-color: #000000; color: #ffffff; }
+        body { background-color: #0F0F0F; color: #FFFFFF; scroll-behavior: smooth; }
         
-        /* Pure Gold 3D Button */
-        .btn-gold-3d {
-            background: linear-gradient(180deg, #F2CA50 0%, #D4AF37 40%, #996515 100%);
-            border: 1px solid #FFD700;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3), inset 0 2px 2px rgba(255, 255, 255, 0.5);
-            color: #000000;
-            transition: all 0.2s ease;
-        }
-        .btn-gold-3d:active {
-            transform: scale(0.96) translateY(2px);
-            box-shadow: 0 2px 5px rgba(212, 175, 55, 0.2);
+        /* 1. Golden Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(to right, #FFD700, #FFB300, #FFC107);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        /* Privacy & Contact Buttons - Small & Different */
-        .btn-footer-link {
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #a3a3a3;
-            font-size: 11px;
-            background: rgba(255, 255, 255, 0.03);
-            transition: all 0.3s ease;
+        /* 2. Premium 3D Gold Button */
+        .btn-luxury-gold {
+            background: linear-gradient(145deg, #FFD700, #FFB300);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 9999px;
+            color: #000;
+            font-weight: 800;
         }
-        .btn-footer-link:hover {
-            border-color: #D4AF37;
-            color: #ffffff;
+        .btn-luxury-gold:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+        }
+
+        /* 3. Glass + Gold Border Cards */
+        .luxury-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            transition: all 0.4s ease;
+        }
+        .luxury-card:hover {
+            border-color: #FFD700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
+            transform: translateY(-8px);
+        }
+
+        /* 4. Soft Gold Glow */
+        .gold-glow {
+            position: absolute;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Gallery Hover */
+        .gallery-item img {
+            transition: all 0.6s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .gallery-item:hover {
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
         }
     </style>
 </head>
-<body class="font-body antialiased">
+<body class="font-body">
 
-<header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
-    <div class="flex justify-between items-center px-6 py-4 w-full max-w-md mx-auto">
-        <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-[#D4AF37] text-2xl" style='font-variation-settings: "FILL" 1;'>stars</span>
-            <div class="text-xl font-extrabold tracking-tighter font-headline text-white uppercase">NAMIFY</div>
+    <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black font-heading gold-gradient-text tracking-tighter">NAMIFY</div>
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" target="_blank" class="btn-luxury-gold px-6 py-2 text-xs">TRY FREE</a>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=com.art.namify1" target="_blank">
-            <button class="btn-gold-3d font-bold text-[10px] px-5 py-2.5 rounded-full uppercase tracking-wider">Download Now</button>
-        </a>
-    </div>
-</header>
+    </header>
 
-<main class="pt-24 pb-20 max-w-md mx-auto overflow-hidden">
-    <section class="px-6 py-8 flex flex-col items-center text-center">
-        <h1 class="font-headline font-extrabold text-4xl leading-[1.2] tracking-tighter mb-4 text-white">
-            Transform Your Name into <span class="text-[#D4AF37]">3D Luxury Art</span>
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
+        <div class="gold-glow top-[-20%]"></div>
+        <h1 class="font-heading font-black text-5xl md:text-7xl mb-6 leading-tight max-w-4xl animate-fade-in">
+            Turn Your Name Into <br><span class="gold-gradient-text">Luxury 3D Art</span>
         </h1>
-        <p class="text-neutral-500 text-sm mb-10 max-w-[280px]">Create stunning metallic, crystal, and 3D typography in one click.</p>
+        <p class="text-neutral-400 text-lg md:text-xl mb-12 max-w-2xl">
+            Choose design <span class="text-gold-1">→</span> Type your name <span class="text-gold-1">→</span> Get stunning art in 10 seconds
+        </p>
         
-        <div class="w-full aspect-square mb-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-            <img alt="Hero Art" class="w-full h-full object-cover" src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg"/>
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gold-1 rounded-full blur opacity-25 group-hover:opacity-50 transition"></div>
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-luxury-gold relative px-10 py-5 text-xl inline-block">
+                Try Free Now
+            </a>
         </div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.art.namify1" target="_blank" class="w-full">
-            <button class="btn-gold-3d w-full font-black text-lg py-4 rounded-full flex items-center justify-center gap-2">
-                <span class="material-symbols-outlined text-2xl">play_circle</span>
-                <span>GET ON GOOGLE PLAY</span>
-            </button>
-        </a>
-    </section>
-
-    <section class="px-6 py-10">
-        <h2 class="font-headline font-bold text-xl mb-8 text-white">Premium Collection</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <div class="rounded-3xl overflow-hidden aspect-[4/5] border border-white/5"><img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg" class="w-full h-full object-cover"/></div>
-            <div class="rounded-3xl overflow-hidden aspect-[4/5] mt-6 border border-white/5"><img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg" class="w-full h-full object-cover"/></div>
-            <div class="rounded-3xl overflow-hidden aspect-[4/5] -mt-6 border border-white/5"><img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg" class="w-full h-full object-cover"/></div>
-            <div class="rounded-3xl overflow-hidden aspect-[4/5] mt-0 border border-white/5"><img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg" class="w-full h-full object-cover"/></div>
+        <div class="mt-20 w-full max-w-3xl rounded-3xl overflow-hidden border border-white/10 shadow-2xl gallery-item">
+            <img src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg" class="w-full h-full object-cover" />
         </div>
     </section>
-</main>
 
-<footer class="bg-[#050505] py-12 px-6 text-center border-t border-white/5">
-    <div class="text-white font-black font-headline text-2xl mb-10 tracking-tighter uppercase opacity-80">NAMIFY</div>
-    
-    <div class="flex justify-center gap-3">
-        <a href="https://sites.google.com/view/namify-privacypolicy" target="_blank" class="btn-footer-link px-4 py-2 rounded-full font-semibold uppercase tracking-widest">
-            Privacy
-        </a>
-        
-        <a href="mailto:Ownersohel@gmail.com" class="btn-footer-link px-4 py-2 rounded-full font-semibold uppercase tracking-widest">
-            Contact
-        </a>
-    </div>
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="font-heading font-bold text-3xl mb-16 text-center">HOW IT <span class="text-gold-1">WORKS</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="luxury-card p-10 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-1 mb-6">palette</span>
+                <h3 class="font-bold text-xl mb-4">Choose Design</h3>
+                <p class="text-neutral-500 text-sm">Premium styles available for any vibe.</p>
+            </div>
+            <div class="luxury-card p-10 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-1 mb-6">edit_note</span>
+                <h3 class="font-bold text-xl mb-4">Type Name</h3>
+                <p class="text-neutral-500 text-sm">Enter any text or nickname instantly.</p>
+            </div>
+            <div class="luxury-card p-10 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-1 mb-6">bolt</span>
+                <h3 class="font-bold text-xl mb-4">Get in 10 Sec</h3>
+                <p class="text-neutral-500 text-sm">AI generates your masterpiece on the fly.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="mt-10 text-[9px] text-neutral-700 tracking-[0.4em] uppercase">
-        © 2026 DIGITAL ATELIER
-    </div>
-</footer>
+    <section class="bg-dark-card/50 py-24 px-6 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="text-center p-4">
+                    <span class="material-symbols-outlined text-gold-1 mb-3">touch_app</span>
+                    <p class="text-[10px] font-bold tracking-widest uppercase">One Tap Creation</p>
+                </div>
+                <div class="text-center p-4">
+                    <span class="material-symbols-outlined text-gold-1 mb-3">hd</span>
+                    <p class="text-[10px] font-bold tracking-widest uppercase">Ultra HD Output</p>
+                </div>
+                <div class="text-center p-4">
+                    <span class="material-symbols-outlined text-gold-1 mb-3">auto_awesome</span>
+                    <p class="text-[10px] font-bold tracking-widest uppercase">1000+ Styles</p>
+                </div>
+                <div class="text-center p-4">
+                    <span class="material-symbols-outlined text-gold-1 mb-3">memory</span>
+                    <p class="text-[10px] font-bold tracking-widest uppercase">AI Powered</p>
+                </div>
+                <div class="text-center p-4">
+                    <span class="material-symbols-outlined text-gold-1 mb-3">save</span>
+                    <p class="text-[10px] font-bold tracking-widest uppercase">Instant Save</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading font-bold text-3xl mb-16">PREMIUM <span class="gold-gradient-text">COLLECTION</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="gallery-item rounded-2xl overflow-hidden border border-white/5">
+                    <img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg" class="w-full h-full object-cover" />
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden border border-white/5">
+                    <img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg" class="w-full h-full object-cover" />
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden border border-white/5">
+                    <img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg" class="w-full h-full object-cover" />
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden border border-white/5">
+                    <img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 text-center px-6">
+        <p class="font-heading italic text-2xl md:text-4xl text-neutral-400">
+            "Your name deserves more than text. <br><span class="text-white not-italic font-black mt-4 block">It deserves <span class="gold-gradient-text">art</span>.</span>"
+        </p>
+    </section>
+
+    <section class="pb-32 px-6 text-center relative">
+        <div class="gold-glow bottom-0"></div>
+        <div class="max-w-2xl mx-auto">
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-luxury-gold w-full md:w-auto px-12 py-6 text-2xl block md:inline-block">
+                Create Your Name Art Now
+            </a>
+            <div class="flex justify-center gap-8 mt-6 text-neutral-500 text-xs font-bold tracking-[0.2em] uppercase">
+                <span>100% Free</span>
+                <span>No Skills Needed</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <div class="gold-gradient-text font-black text-2xl mb-8 font-heading">NAMIFY</div>
+        <div class="flex justify-center gap-6 mb-8 text-[10px] tracking-widest uppercase font-bold">
+            <a href="https://sites.google.com/view/namify-privacypolicy" class="hover:text-gold-1 transition">Privacy Policy</a>
+            <a href="mailto:Ownersohel@gmail.com" class="hover:text-gold-1 transition">Contact Support</a>
+        </div>
+        <p class="text-[10px] text-neutral-700 tracking-widest">© 2026 DIGITAL ATELIER • ALL RIGHTS RESERVED</p>
+    </footer>
 
 </body>
 </html>
