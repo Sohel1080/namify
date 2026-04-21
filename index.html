@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Namify - The Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#2f3132",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary": "#2f3035",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#45464c",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "primary-fixed": "#ffe088",
+                        "tertiary": "#ceced0",
+                        "outline": "#99907c",
+                        "secondary-fixed": "#e2e2e8",
+                        "surface-tint": "#e9c349",
+                        "background": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-highest": "#353534",
+                        "inverse-primary": "#735c00",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary-container": "#b5b4bb",
+                        "tertiary-fixed-dim": "#c6c6c8",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "on-tertiary-container": "#434547",
+                        "outline-variant": "#4d4635",
+                        "on-primary-fixed": "#241a00",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "on-secondary-fixed": "#1a1b20",
+                        "primary-container": "#d4af37",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-fixed": "#e2e2e4",
+                        "secondary-container": "#45464c",
+                        "inverse-surface": "#e5e2e1",
+                        "primary": "#f2ca50",
+                        "surface-container": "#201f1f",
+                        "surface-bright": "#3a3939",
+                        "secondary-fixed-dim": "#c6c6cc",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-container": "#b2b3b5",
+                        "on-primary": "#3c2f00",
+                        "on-surface-variant": "#d0c5af",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "on-error-container": "#ffdad6",
+                        "secondary": "#c6c6cc",
+                        "surface-variant": "#353534"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313; /* surface */
+            color: #e5e2e1; /* on-surface */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-display-lg { font-size: 4.5rem; line-height: 1.1; }
+        .text-headline-lg { font-size: 3rem; line-height: 1.2; }
+        .text-body-md { font-size: 1rem; line-height: 1.5; }
+        .text-label-md { font-size: 0.875rem; line-height: 1.4; font-weight: 500; }
+        
+        .ambient-shadow {
+            box-shadow: 0 0 40px 0 rgba(229, 226, 225, 0.06);
+        }
+    </style>
+</head>
+<body class="font-body antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1920px] mx-auto z-50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-gradient-to-br from-primary to-primary-container flex items-center justify-center shadow-lg">
+<span class="text-on-primary font-black font-headline text-lg leading-none">N</span>
+</div>
+<div class="text-[#E5E2E1] font-['Manrope'] font-black tracking-tighter text-3xl" style="">
+                Namify
+            </div>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-md px-6 py-2.5 font-headline font-bold text-sm tracking-wide hover:scale-95 transition-transform" style="">
+                Download Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-24 lg:pt-56 lg:pb-32 px-6 lg:px-12 max-w-[1920px] mx-auto min-h-screen flex items-center bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+<div class="lg:col-span-5 z-10 space-y-8">
+<h1 class="font-headline font-extrabold text-display-lg tracking-tighter text-on-surface" style="">
+                    Transform Your Name into <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container" style="">3D Luxury Art</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-lg leading-relaxed" style="">
+                    Create stunning metallic, crystal, and 3D typography in one click. The ultimate name art tool for everyone.
+                </p>
+<div class="pt-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-md px-8 py-4 font-headline font-bold text-lg tracking-wide hover:opacity-90 transition-opacity ambient-shadow flex items-center gap-3" style="">
+<span class="material-symbols-outlined" data-weight="fill" style='font-variation-settings: "FILL" 1;'>play_arrow</span>
+                        Get it on Google Play
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+<img alt="3D abstract luxury rendering" class="w-full h-auto object-cover rounded-xl ambient-shadow transform translate-x-8 scale-105" data-alt="High-end 3D rendering of elegant abstract metallic gold and silver ribbons floating in a dark studio environment with dramatic rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi4aP73ZiiMaGz--TJzombidD9dzBqYby4ggMpkDhRY-ohec31BjIlxChitHbs67GYPN9Jm0BFN85FACDZf0k7BXR4rczNSrWIk49H_b0xSz3Nl9xURJCkklCx3C4rv7fAVL0B3KOdWeQdCT0srwfYZ-tStcoxngTZjRQOCuA0X9-EZAg2V65O9BHMSrzjPug1HROVuRN-HghJMFBOBMK6_b6wX7ijuUAeMSovOtAW1eGE7dpERaupMzpmjZ0wymLr_dmNcIqUghmb" style=""/>
+</div>
+</div>
+</header>
+<!-- Features Section -->
+<section class="py-32 px-6 lg:px-12 bg-surface-container-lowest transition-colors duration-1000" id="features">
+<div class="max-w-[1920px] mx-auto">
+<h2 class="font-headline font-bold text-headline-lg tracking-tight text-on-surface mb-20 text-center" style="">
+                Refinement in Every Pixel
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="bg-surface-container-low rounded-xl p-10 group hover:bg-surface-container transition-colors duration-500 ambient-shadow">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl" style="">diamond</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-4" style="">Luxury Textures</h3>
+<p class="font-body text-on-surface-variant leading-relaxed" style="">
+                        Access an exclusive library of finishes including 24k Gold, Brushed Chrome, and Obsidian Wood.
+                    </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-low rounded-xl p-10 group hover:bg-surface-container transition-colors duration-500 ambient-shadow">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl" style="">ios_share</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-4" style="">One-Tap Export</h3>
+<p class="font-body text-on-surface-variant leading-relaxed" style="">
+                        Instantly render 4K resolution master files perfectly formatted for your social media presence.
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-low rounded-xl p-10 group hover:bg-surface-container transition-colors duration-500 ambient-shadow">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl" style="">memory</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-4" style="">AI Powered</h3>
+<p class="font-body text-on-surface-variant leading-relaxed" style="">
+                        Our intelligent engine calculates ambient occlusion and ray-traced reflections automatically.
+                    </p>
+</div>
+</div>
+</div>
+</section><div class="flex justify-center -mt-8 mb-16 relative z-10">
+<div class="flex flex-col items-center gap-2">
+<span class="text-primary-fixed-dim text-xs font-label uppercase tracking-widest opacity-50" style="">Scroll to Explore</span>
+<div class="animate-bounce flex items-center justify-center w-10 h-10 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-primary text-2xl" style="">expand_more</span>
+</div>
+</div>
+</div>
+<!-- How It Works Section -->
+<section class="py-32 px-6 lg:px-12 bg-surface">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline font-bold text-headline-lg tracking-tight text-on-surface mb-24 text-center" style="">
+                The Creative Process
+            </h2>
+<div class="flex flex-col md:flex-row gap-16 md:gap-8 justify-between relative">
+<!-- Line connector -->
+<div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent -z-10"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center w-full md:w-1/3">
+<div class="w-20 h-20 rounded-full bg-surface-container-high border-4 border-surface flex items-center justify-center mb-8 shadow-xl">
+<span class="font-headline font-black text-3xl text-primary" style="">01</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-3" style="">Choose Design</h3>
+<p class="font-body text-on-surface-variant" style="">Select your canvas from our curated gallery of premium 3D environments.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center w-full md:w-1/3">
+<div class="w-20 h-20 rounded-full bg-surface-container-high border-4 border-surface flex items-center justify-center mb-8 shadow-xl">
+<span class="font-headline font-black text-3xl text-primary" style="">02</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-3" style="">Enter Name</h3>
+<p class="font-body text-on-surface-variant" style="">Input your text and let our AI engine sculpt the perfect typography.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center w-full md:w-1/3">
+<div class="w-20 h-20 rounded-full bg-surface-container-high border-4 border-surface flex items-center justify-center mb-8 shadow-xl">
+<span class="font-headline font-black text-3xl text-primary" style="">03</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-3" style="">Download Masterpiece</h3>
+<p class="font-body text-on-surface-variant" style="">Export your finished high-resolution artwork instantly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="py-32 px-6 lg:px-12 bg-surface-container-lowest" id="gallery">
+<div class="max-w-[1920px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline font-bold text-headline-lg tracking-tight text-on-surface" style="">
+                    Curated Masterpieces
+                </h2>
+<a class="font-label text-label-md text-primary uppercase tracking-widest hover:text-primary-container transition-colors flex items-center gap-2" href="#" style="">
+                    View Full Gallery <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group ambient-shadow">
+<img alt="3D typography" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Monolithic 3D letter rendering in polished obsidian dark stone with subtle gold flakes reflecting soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPmJLcotF6ALa7f8VqTLBzLd204H9WlZqDpG1_6Pf_-LuatMnopaPzoh4gm4pLY2vI9Ug5Uf3CwV7VZN2SMFZGZKoiu2TNAL12AfvOEbeKrqygcqEeCAPpmzXiWurYSnDWI3OlBwJxMJASwC4Rf6O97NkNKEoaK4IA5qmlZ2l4gTtcvBkCRvpXXU3JXTtxXqdwgAv6xTD5tZlsLaAetBRrFBGj6HS2ZM8H1drgbMO4plSHa74oV2lGNWxA-B_onPVyX0DRmwQLtyU0" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="font-headline text-on-surface text-xl font-bold" style="">Obsidian Monolith</span>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 rounded-xl overflow-hidden relative group ambient-shadow">
+<img alt="Liquid metal 3D art" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Abstract 3D rendering of flowing liquid chrome and gold intersecting with sharp geometric glass shards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQq3JwJnJnG848a7IIMwSbVDDIwEuNGtndEtFDU0CEyUEsCBJnTjrG8sSlqC6hEwtkH2eDrmhW4HJmTFeFjauT-RyWi_5kFGKjD7wHx92WDb3OdEaVK9z7uvZL1Ri2h3KrTGLbqHfPoFz5qtAGwPRTTSBiMbUDO8HlbHY58HNC1B4lHpPEKcvLYyygP4JiS5FVQbMFx7dBsPjXOLZknDUVw2Sljb-dJKcW9DzFZ3Zmo946nuXGi-5Ueu-OqzO73LieJM3Qlz_FEM9s" style=""/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-xl overflow-hidden relative group ambient-shadow">
+<img alt="Neon 3D typography" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Sleek 3D typography in brushed silver resting on a dark velvet surface with subtle dramatic underlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaqRE0OsEsBtt_JQe440LwAIvObYNdPgPI5lCap7IdXKbJD95lasnrmP3RFuPWUHfiljBBLdxs2FcH6WBNYsPo7GIPjvo_LEnM4VhpysMQMii4m3KC2oNxcV4npWNJTDksIU61ZFm-ZUmyjAVHQ1rfaa-GBu1n6hQ0AO6kh0G8a64Q2xUFV7XN_Qf9GSgsQgri8wOWRZXfpJ9egQW3QDZiqqeP4_-MrmaEsYjlVQqg2xQ5EUCsKP9DEm8W88LeUrnLNebORKBNoW97" style=""/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-xl overflow-hidden relative group ambient-shadow">
+<img alt="Crystal 3D art" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Refracting crystal 3D text formation catching warm golden hour light against a deep charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA80VnlfLb_Q1XUvFNVFC59KGxw6mkNje5nX9KJ-fmei_Mgcrbjk69L-ppytNxGyXr2JoP0oYut0ZUZs-1U8Ej5M-g77wdqrFN66Empo5pc9qCaywEx6n3KGtq4b6Vji4J6pq5d_WnQfaxKwRH8mwe26cWthoHPz2eK1iHwMcMQmteAhhRDrN-FWWrTKCSJdsmTWAhZGIiNskhuZsPFhruvpaPxbSvdNSxSKe0vNfB9FITzU3AD5OzkT1fh_-hLr8PfUvbi56B8QAgF" style=""/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] border-t border-[#4D4635]/15 w-full rounded-t-none">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto bg-gradient-to-t from-[#131313] to-[#0E0E0E]">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-bold text-[#E5E2E1] font-['Manrope']" style="">Namify</span>
+<p class="font-['Inter'] text-sm text-[#C6C6CC]/60 mt-2" style="">© 2024 Namify Digital Atelier. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-sm uppercase tracking-widest">
+<a class="text-[#C6C6CC]/60 hover:text-[#E5E2E1] transition-opacity active:opacity-80" href="#" style="">Privacy Policy</a>
+<a class="text-[#C6C6CC]/60 hover:text-[#E5E2E1] transition-opacity active:opacity-80" href="#" style="">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>
