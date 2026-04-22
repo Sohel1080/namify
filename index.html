@@ -1,146 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <title>Namify - Best 3D Name Art App | Create Stylish Name Design Online</title>
+    <meta name="title" content="Namify - Best 3D Name Art App | Create Stylish Name Design Online">
+    <meta name="description" content="Use Namify, the ultimate 3D Name Art App to create stylish name designs. Transform your text into luxury 3D art with our AI generator. 10,000+ premium styles for free!">
+    <meta name="keywords" content="name art, 3d name art app, stylish name design, name art generator, 3d name wallpaper, luxury name art, Namify, stylish typography">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
 
-<title>Namify - 3D Name Art App | Stylish Name Art Maker & AI Generator</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://play.google.com/store/apps/details?id=com.art.namify1">
+    <meta property="og:title" content="Namify - Create Stylish 3D Name Art Instantly">
+    <meta property="og:description" content="The world's most powerful 3D Name Art App. Try 10,000+ stylish designs.">
+    <meta property="og:image" content="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg">
 
-<meta name="description" content="Namify is the best 3D name art app to create stylish name designs. Choose design, type your name and get luxury 3D name art in seconds. 10000+ templates available."/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold-primary': '#FFD700',
+                        'gold-accent': '#FFB300',
+                        'dark-black': '#0F0F0F',
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-<meta name="keywords" content="name art, 3d name art, stylish name art, name art maker, 3d text art, ai name generator, name art app, stylish names design, name art images, 3d name design, text art generator, name art editor"/>
-
-<meta name="author" content="Namify"/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://sohel1080.github.io/namify/"/>
-
-<!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Namify - 3D Name Art App"/>
-<meta property="og:description" content="Create stunning 3D name art & stylish text designs instantly with Namify."/>
-<meta property="og:url" content="https://sohel1080.github.io/namify/"/>
-<meta property="og:image" content="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg"/>
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Namify - 3D Name Art App"/>
-<meta name="twitter:description" content="Best AI app to create stylish name art & 3D designs."/>
-<meta name="twitter:image" content="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg"/>
-
-<meta name="theme-color" content="#FFD700"/>
-
-<link rel="icon" href="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg"/>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-
-<!-- STRUCTURED DATA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "SoftwareApplication",
- "name": "Namify - 3D Name Art App",
- "operatingSystem": "Android",
- "applicationCategory": "MultimediaApplication",
- "description": "Create stylish 3D name art and text designs instantly using AI.",
- "url": "https://sohel1080.github.io/namify/",
- "image": "https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg",
- "offers": {
-   "@type": "Offer",
-   "price": "0",
-   "priceCurrency": "USD"
- },
- "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "4.8",
-   "ratingCount": "1200"
- }
-}
-</script>
-
-<style>
-body {background:#0F0F0F;color:#fff;font-family:Poppins;}
-.gold {background:linear-gradient(#FFD700,#FFB300);-webkit-background-clip:text;color:transparent;}
-.btn {background:linear-gradient(#FFD700,#FFB300);color:#000;padding:12px 24px;border-radius:30px;font-weight:bold;}
-.card {background:#1a1a1a;border-radius:20px;padding:20px;}
-</style>
-
+    <style>
+        body { background-color: #0F0F0F; color: #FFFFFF; scroll-behavior: smooth; overflow-x: hidden; }
+        .gold-luxury-text {
+            background: linear-gradient(180deg, #FFF5D1 0%, #FFD700 45%, #FFB300 55%, #8A6E2F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        .btn-gold-3d {
+            background: linear-gradient(180deg, #FFD700 0%, #FFB300 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+            color: #000;
+        }
+        .luxury-card {
+            background: rgba(26, 26, 26, 0.5);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+    </style>
 </head>
+<body class="font-body">
 
-<body>
+    <header class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-gold-primary text-xl">diamond</span>
+                <div class="text-lg md:text-xl font-black font-heading gold-luxury-text tracking-tighter uppercase">NAMIFY</div>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-gold-3d px-4 py-1.5 rounded-full font-bold text-[9px] md:text-[10px] tracking-widest uppercase">Download App</a>
+        </div>
+    </header>
 
-<!-- HEADER -->
-<header style="display:flex;justify-content:space-between;padding:15px;">
-<h2 class="gold">NAMIFY</h2>
-<a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn">Download</a>
-</header>
+    <section class="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-24 overflow-hidden">
+        <div class="relative z-10 w-full">
+            <h1 class="font-heading font-black text-4xl md:text-7xl leading-[1.1] tracking-tighter mb-6">
+                Professional <span class="gold-luxury-text">3D Name Art App</span> <br>
+                For Stylish Name Design
+            </h1>
+            
+            <p class="text-neutral-500 text-[10px] md:text-sm mb-10 tracking-[0.2em] uppercase font-medium">
+                Best Name Art Generator <span class="text-gold-primary mx-1">•</span> Luxury 3D Effects <span class="text-gold-primary mx-1">•</span> 100% Free
+            </p>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-gold-3d px-8 md:px-12 py-4 md:py-5 rounded-full text-base md:text-xl font-black inline-flex items-center gap-2">
+                Create Your 3D Name Design <span class="material-symbols-outlined font-bold text-lg">arrow_forward</span>
+            </a>
+        </div>
 
-<!-- HERO -->
-<section style="text-align:center;padding:40px;">
-<h1>3D Name Art Maker App</h1>
-<h2 class="gold">Create Stylish Name Designs Instantly</h2>
+        <div class="mt-16 w-full max-w-3xl px-2">
+            <div class="relative rounded-2xl md:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
+                <img src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg" alt="3D Name Art App Showcase - Stylish Name Design Examples" class="w-full h-auto object-cover" />
+            </div>
+        </div>
+    </section>
 
-<p>Choose design • Type name • Get 3D name art in seconds</p>
+    <section class="py-20 px-6 max-w-6xl mx-auto relative z-10">
+        <h2 class="font-heading font-bold text-2xl md:text-3xl mb-12 text-center tracking-widest uppercase">STYLISH <span class="text-gold-primary">NAME ART</span> FEATURES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="luxury-card p-8 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">palette</span>
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">10,000+ Designs</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed">The biggest library for 3D name art and stylish typography in one app.</p>
+            </div>
+            <div class="luxury-card p-8 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">edit_square</span>
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">Custom Name Design</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed">Our AI name art generator creates stunning visuals for any name instantly.</p>
+            </div>
+            <div class="luxury-card p-8 rounded-3xl text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">bolt</span>
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">Instant 3D Rendering</h3>
+                <p class="text-neutral-500 text-xs leading-relaxed">Download high-quality stylish name designs in less than 10 seconds.</p>
+            </div>
+        </div>
+    </section>
 
-<a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn">Try Free Now</a>
+    <section class="py-12 bg-zinc-950/50 border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-3 md:grid-cols-5 gap-4">
+            <div class="text-center">
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">ads_click</span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">3D Name App</p>
+            </div>
+            <div class="text-center">
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">high_quality</span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Ultra HD Art</p>
+            </div>
+            <div class="text-center">
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">auto_awesome</span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Stylish Text</p>
+            </div>
+            <div class="text-center hidden md:block">
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">psychology</span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">AI Generator</p>
+            </div>
+            <div class="text-center hidden md:block">
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">cloud_download</span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Free Download</p>
+            </div>
+        </div>
+    </section>
 
-<br><br>
+    <section class="py-20 px-6 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading font-black text-2xl mb-10 tracking-tighter">REAL <span class="gold-luxury-text">NAME DESIGNS</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+                <img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg" alt="Stylish 3D Name Art Crystal Design" class="rounded-2xl border border-white/5 w-full aspect-[4/5] object-cover" />
+                <img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg" alt="Luxury 3D Name Art Gold Finish" class="rounded-2xl border border-white/5 w-full aspect-[4/5] object-cover" />
+                <img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg" alt="Creative Name Art 3D Glass Effect" class="rounded-2xl border border-white/5 w-full aspect-[4/5] object-cover" />
+                <img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg" alt="Modern Stylish Name Design Namify" class="rounded-2xl border border-white/5 w-full aspect-[4/5] object-cover" />
+            </div>
+        </div>
+    </section>
 
-<img src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg" 
-alt="3D name art created using Namify app" 
-style="width:100%;max-width:400px;border-radius:20px;">
-</section>
+    <section class="pb-24 px-6 text-center">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-neutral-400 text-xs mb-6 uppercase tracking-[0.3em] font-bold">The #1 Name Art Generator</h2>
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-gold-3d w-full md:w-auto px-10 py-4 rounded-full text-lg font-black block md:inline-block tracking-tighter">
+                Download 3D Name Art App
+            </a>
+            <p class="mt-8 text-neutral-600 text-[8px] font-bold tracking-[0.3em] uppercase">Trusted for Stylish Name Art Designs Worldwide</p>
+        </div>
+    </section>
 
-<!-- HOW IT WORKS -->
-<section style="padding:30px;text-align:center;">
-<h2>How It Works</h2>
-
-<div class="card">
-<h3>Choose Design</h3>
-<p>Select from thousands of stylish 3D name art templates.</p>
-</div>
-
-<div class="card">
-<h3>Type Name</h3>
-<p>Enter your name or any text easily.</p>
-</div>
-
-<div class="card">
-<h3>Instant Result</h3>
-<p>Get AI generated 3D name art in seconds.</p>
-</div>
-
-</section>
-
-<!-- FEATURES -->
-<section style="text-align:center;padding:20px;">
-<p>✔ 3D Name Art Maker</p>
-<p>✔ Stylish Name Design</p>
-<p>✔ AI Name Generator</p>
-<p>✔ Ultra HD Images</p>
-<p>✔ Fast Processing</p>
-</section>
-
-<!-- GALLERY -->
-<section style="padding:20px;text-align:center;">
-<h2>Real Name Art Designs</h2>
-
-<img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg" alt="stylish name art design" width="45%">
-<img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg" alt="3d name art design" width="45%">
-
-</section>
-
-<!-- CTA -->
-<section style="text-align:center;padding:40px;">
-<h2>Your name deserves art</h2>
-<a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn">Create Now</a>
-</section>
-
-<!-- FOOTER -->
-<footer style="text-align:center;padding:30px;">
-<p>© 2026 Namify - 3D Name Art App</p>
-</footer>
+    <footer class="py-16 border-t border-white/5 text-center bg-black">
+        <div class="gold-luxury-text font-black text-2xl mb-10 font-heading tracking-tighter">NAMIFY</div>
+        <div class="flex justify-center gap-3 mb-8">
+            <a href="https://sites.google.com/view/namify-privacypolicy" class="px-5 py-2 border border-white/10 rounded-full text-[7px] font-bold tracking-widest uppercase transition">Privacy Policy</a>
+            <a href="mailto:Ownersohel@gmail.com" class="px-5 py-2 border border-white/10 rounded-full text-[7px] font-bold tracking-widest uppercase transition">Contact Us</a>
+        </div>
+        <p class="text-[8px] text-neutral-800 tracking-[0.4em] uppercase leading-loose">© 2026 NAMIFY - THE ULTIMATE 3D NAME ART APP & STYLISH NAME DESIGN GENERATOR</p>
+    </footer>
 
 </body>
 </html>
