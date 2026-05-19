@@ -295,38 +295,47 @@
 <!-- GALLERY -->
 <div class="gallery-wrap">
   <div class="gallery-inner">
+    
     <p class="sec-label reveal">Real Results</p>
-    <h2 class="reveal">See What<br>People Create.</h2>
+
+    <h2 class="reveal gallery-title">
+      See What<br>People Create.
+    </h2>
 
     <div class="gallery-grid">
+
       <div class="g-item reveal">
         <img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg"
              referrerpolicy="no-referrer"
              alt="Gold luxury 3D name art created with Namify"
-             width="400" height="500" loading="lazy"/>
+             loading="lazy"/>
         <div class="g-overlay" aria-hidden="true"></div>
       </div>
+
       <div class="g-item reveal" style="transition-delay:.1s">
         <img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg"
              referrerpolicy="no-referrer"
              alt="Neon 3D name art created with Namify"
-             width="400" height="500" loading="lazy"/>
+             loading="lazy"/>
         <div class="g-overlay" aria-hidden="true"></div>
       </div>
+
       <div class="g-item reveal" style="transition-delay:.2s">
         <img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg"
              referrerpolicy="no-referrer"
              alt="Metallic 3D name art created with Namify"
-             width="400" height="500" loading="lazy"/>
+             loading="lazy"/>
         <div class="g-overlay" aria-hidden="true"></div>
       </div>
+
       <div class="g-item reveal" style="transition-delay:.3s">
         <img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg"
              referrerpolicy="no-referrer"
              alt="Premium 3D name art wallpaper created with Namify"
-             width="400" height="500" loading="lazy"/>
+             loading="lazy"/>
         <div class="g-overlay" aria-hidden="true"></div>
       </div>
+
     </div>
   </div>
 </div>
@@ -342,16 +351,28 @@
 <!-- FINAL CTA -->
 <div class="cta-wrap">
   <div class="cta-box reveal">
-    <h2>Create Yours<br><span class="gold-text">For Free</span></h2>
-    <p>Download Namify.art and turn any name into luxury 3D art in seconds.</p>
+
+    <h2>
+      Create Yours<br>
+      <span class="gold-text">For Free</span>
+    </h2>
+
+    <p>
+      Download Namify.art and turn any name into luxury 3D art in seconds.
+    </p>
 
     <a href="https://play.google.com/store/apps/details?id=com.art.namify1"
-       target="_blank" rel="noopener" class="play-btn">
+       target="_blank"
+       rel="noopener"
+       class="play-btn">
+
       <span class="play-icon">▶</span>
+
       <span class="play-text">
         <span class="play-sub">Get it on</span>
         <span class="play-main">Google Play</span>
       </span>
+
     </a>
 
     <div class="pills">
@@ -360,26 +381,169 @@
       <span class="pill">✓ No Design Skills</span>
       <span class="pill">✓ Instant HD Download</span>
     </div>
+
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
+
   <div class="f-logo gold-text">Namify.art</div>
-  <p class="f-sub">Luxury AI Creative Identity Platform</p>
+
+  <p class="f-sub">
+    Luxury AI Creative Identity Platform
+  </p>
+
   <nav class="f-links">
     <a href="/privacy-policy.html">Privacy Policy</a>
     <a href="/terms.html">Terms &amp; Conditions</a>
     <a href="mailto:contact@namify.art">Contact</a>
   </nav>
-  <p class="f-copy">© 2026 Namify.art. All Rights Reserved.</p>
+
+  <p class="f-copy">
+    © 2026 Namify.art. All Rights Reserved.
+  </p>
+
 </footer>
+
+<style>
+
+/* ===== FIXED GALLERY ===== */
+
+.gallery-wrap{
+  background:var(--surface);
+  border-top:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+  padding:70px 0;
+}
+
+.gallery-inner{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+.gallery-title{
+  margin-bottom:28px !important;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:0;
+  align-items:start;
+}
+
+.g-item{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.06);
+  background:#0f0f0f;
+  aspect-ratio:4/5;
+  transition:transform .3s ease;
+}
+
+.g-item:hover{
+  transform:translateY(-4px);
+}
+
+/* REMOVE OVERLAP */
+.g-item:nth-child(2),
+.g-item:nth-child(4){
+  margin-top:0 !important;
+}
+
+.g-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.g-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.45) 0%,
+    transparent 45%
+  );
+}
+
+/* ===== TAGLINE FIX ===== */
+
+.tagline-wrap{
+  padding:70px 24px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.tagline-q{
+  max-width:760px;
+  margin:0 auto;
+}
+
+/* ===== CTA FIX ===== */
+
+.cta-wrap{
+  padding:20px 24px 80px;
+  text-align:center;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+
+}
+
+@media(max-width:560px){
+
+  .gallery-wrap{
+    padding:55px 0;
+  }
+
+  .gallery-inner{
+    padding:0 14px;
+  }
+
+  .gallery-grid{
+    gap:12px;
+  }
+
+  .g-item{
+    border-radius:16px;
+  }
+
+  .tagline-wrap{
+    padding:55px 20px;
+  }
+
+  .cta-wrap{
+    padding:10px 18px 65px;
+  }
+
+}
+
+</style>
 
 <script>
   const io = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+      }
+    }),
     { threshold: 0.1 }
   );
+
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
