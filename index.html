@@ -3,11 +3,21 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Namify - Luxury 3D Name Art</title>
+
+    <title>Namify.art — Luxury 3D Name Art</title>
+
+    <meta name="description" content="Namify.art is a luxury AI creative identity platform for premium 3D name art, stylish text designs, and personalized digital expression.">
+
+    <meta name="copyright" content="Namify.art">
+
+    <link rel="icon" type="image/png" href="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -28,13 +38,20 @@
     </script>
 
     <style>
-        body { background-color: #0F0F0F; color: #FFFFFF; scroll-behavior: smooth; overflow-x: hidden; }
+        body {
+            background-color: #0F0F0F;
+            color: #FFFFFF;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
         .gold-luxury-text {
             background: linear-gradient(180deg, #FFF5D1 0%, #FFD700 45%, #FFB300 55%, #8A6E2F 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
+
         .btn-gold-3d {
             background: linear-gradient(180deg, #FFD700 0%, #FFB300 100%);
             border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -42,11 +59,13 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2);
             color: #000;
         }
+
         .luxury-card {
             background: rgba(26, 26, 26, 0.5);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 215, 0, 0.1);
         }
+
         .glow-sphere {
             position: absolute;
             background: radial-gradient(circle, rgba(255, 215, 0, 0.03) 0%, transparent 70%);
@@ -57,163 +76,298 @@
         }
     </style>
 </head>
+
 <body class="font-body">
 
+    <!-- HEADER -->
     <header class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-white/5">
         <div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+
             <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-gold-primary text-xl" style='font-variation-settings: "FILL" 1;'>diamond</span>
-                <div class="text-lg md:text-xl font-black font-heading gold-luxury-text tracking-tighter">NAMIFY</div>
+                <span class="material-symbols-outlined text-gold-primary text-xl"
+                      style='font-variation-settings: "FILL" 1;'>
+                      diamond
+                </span>
+
+                <div class="text-lg md:text-xl font-black font-heading gold-luxury-text tracking-tight">
+                    Namify.art
+                </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" target="_blank" class="btn-gold-3d px-4 py-1.5 rounded-full font-bold text-[9px] md:text-[10px] tracking-widest uppercase">Download App</a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1"
+               target="_blank"
+               class="btn-gold-3d px-4 py-1.5 rounded-full font-bold text-[9px] md:text-[10px] tracking-widest uppercase">
+               Download App
+            </a>
+
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-24 overflow-hidden">
+
         <div class="glow-sphere top-[-5%] left-[-10%]"></div>
         <div class="glow-sphere bottom-[10%] right-[-10%]"></div>
 
         <div class="relative z-10 w-full">
-            <h1 class="font-heading font-black text-4xl md:text-7xl leading-[1.1] tracking-tighter mb-6">
+
+            <h1 class="font-heading font-black text-4xl md:text-7xl leading-[1.1] tracking-tighter mb-4">
                 Turn Your Name <br>
                 <span class="gold-luxury-text">Into Luxury 3D Art</span>
             </h1>
-            
-            <p class="text-neutral-500 text-[10px] md:text-sm mb-10 tracking-[0.2em] uppercase font-medium">
-                Choose design <span class="text-gold-primary mx-1">•</span> Type name <span class="text-gold-primary mx-1">•</span> Get Art
+
+            <p class="text-neutral-400 text-xs md:text-sm mb-6 tracking-wide">
+                Powered by Namify.art
             </p>
-            
-            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-gold-3d px-8 md:px-12 py-4 md:py-5 rounded-full text-base md:text-xl font-black inline-flex items-center gap-2">
-                Try Free Now <span class="material-symbols-outlined font-bold text-lg">arrow_forward</span>
+
+            <p class="text-neutral-500 text-[10px] md:text-sm mb-10 tracking-[0.2em] uppercase font-medium">
+                Choose design
+                <span class="text-gold-primary mx-1">•</span>
+                Type name
+                <span class="text-gold-primary mx-1">•</span>
+                Get Art
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1"
+               class="btn-gold-3d px-8 md:px-12 py-4 md:py-5 rounded-full text-base md:text-xl font-black inline-flex items-center gap-2">
+
+                Try Free Now
+
+                <span class="material-symbols-outlined font-bold text-lg">
+                    arrow_forward
+                </span>
+
             </a>
+
         </div>
 
         <div class="mt-16 w-full max-w-3xl px-2">
             <div class="relative rounded-2xl md:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
-                <img src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg" class="w-full h-auto object-cover" />
+
+                <img src="https://i.ibb.co/KcYWXcMn/Namify-1774004765052.jpg"
+                     class="w-full h-auto object-cover" />
+
             </div>
         </div>
+
     </section>
 
+    <!-- HOW IT WORKS -->
     <section class="py-20 px-6 max-w-6xl mx-auto relative z-10">
-        <h2 class="font-heading font-bold text-2xl md:text-3xl mb-12 text-center tracking-widest uppercase">HOW IT <span class="text-gold-primary">WORKS</span></h2>
+
+        <h2 class="font-heading font-bold text-2xl md:text-3xl mb-12 text-center tracking-widest uppercase">
+            HOW IT <span class="text-gold-primary">WORKS</span>
+        </h2>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
             <div class="luxury-card p-8 rounded-3xl text-center">
-                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">palette</span>
-                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">Choose Design</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed">Select from 10000+ premium 3D stylish art designs.</p>
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">
+                    palette
+                </span>
+
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">
+                    Choose Design
+                </h3>
+
+                <p class="text-neutral-500 text-xs leading-relaxed">
+                    Select from 10000+ premium 3D stylish art designs.
+                </p>
             </div>
+
             <div class="luxury-card p-8 rounded-3xl text-center">
-                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">edit_square</span>
-                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">Type Name</h3>
-                <p class="text-neutral-500 text-xs leading-relaxed">Simply enter your name or any text.</p>
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">
+                    edit_square
+                </span>
+
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">
+                    Type Name
+                </h3>
+
+                <p class="text-neutral-500 text-xs leading-relaxed">
+                    Simply enter your name or any text.
+                </p>
             </div>
+
             <div class="luxury-card p-8 rounded-3xl text-center">
-                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">bolt</span>
-                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">Instant Result </h3>
-                <p class="text-neutral-500 text-xs leading-relaxed">Get your name art in 10 seconds.</p>
+                <span class="material-symbols-outlined text-4xl text-gold-primary mb-4">
+                    bolt
+                </span>
+
+                <h3 class="font-bold text-lg mb-2 uppercase tracking-tighter">
+                    Instant Result
+                </h3>
+
+                <p class="text-neutral-500 text-xs leading-relaxed">
+                    Get your name art in 10 seconds.
+                </p>
             </div>
+
         </div>
     </section>
 
+    <!-- FEATURES -->
     <section class="py-12 bg-zinc-950/50 border-y border-white/5">
+
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-3 md:grid-cols-5 gap-4">
+
             <div class="text-center">
-                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">ads_click</span>
-                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">One Tap</p>
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">
+                    ads_click
+                </span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">
+                    One Tap
+                </p>
             </div>
+
             <div class="text-center">
-                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">high_quality</span>
-                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Ultra HD</p>
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">
+                    high_quality
+                </span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">
+                    Ultra HD
+                </p>
             </div>
+
             <div class="text-center">
-                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">auto_awesome</span>
-                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Styles</p>
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">
+                    auto_awesome
+                </span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">
+                    Styles
+                </p>
             </div>
+
             <div class="text-center hidden md:block">
-                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">psychology</span>
-                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">AI Engine</p>
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">
+                    psychology
+                </span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">
+                    AI Engine
+                </p>
             </div>
+
             <div class="text-center hidden md:block">
-                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">cloud_download</span>
-                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">Easy Save</p>
+                <span class="material-symbols-outlined text-gold-primary mb-2 text-2xl">
+                    cloud_download
+                </span>
+                <p class="text-[8px] font-bold tracking-widest uppercase opacity-50">
+                    Easy Save
+                </p>
             </div>
+
         </div>
+
     </section>
 
+    <!-- GALLERY -->
     <section class="py-20 px-6 bg-black">
+
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-heading font-black text-2xl mb-10 tracking-tighter">REAL <span class="gold-luxury-text">RESULTS</span></h2>
+
+            <h2 class="font-heading font-black text-2xl mb-10 tracking-tighter">
+                REAL <span class="gold-luxury-text">RESULTS</span>
+            </h2>
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
-                <img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg" class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
-                <img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg" class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
-                <img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg" class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
-                <img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg" class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
+
+                <img src="https://i.ibb.co/XxStSHKh/c511082c-849a-42d0-b6d8-bb9eb46c943a.jpg"
+                     class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
+
+                <img src="https://i.ibb.co/wFVr0g1N/6ef4f788-1f83-42b2-9afe-27cc2e7c8736.jpg"
+                     class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
+
+                <img src="https://i.ibb.co/p6XX7KR5/d449770d-d348-49c8-a1e4-7eff1995bc3e.jpg"
+                     class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
+
+                <img src="https://i.ibb.co/YFw2jDmX/Namify-1773194733992.jpg"
+                     class="rounded-2xl border border-white/5 shadow-lg w-full aspect-[4/5] object-cover" />
+
             </div>
+
         </div>
+
     </section>
 
+    <!-- TAGLINE -->
     <section class="py-20 text-center px-6">
+
         <p class="font-heading normal text-xl md:text-4xl text-neutral-500 leading-tight">
+
             Your name deserves more than text. <br>
-            <span class="text-white not-italic font-black mt-4 block tracking-tighter text-2xl md:text-5xl">It deserves <span class="gold-luxury-text">art.</span></span>
+
+            <span class="text-white not-italic font-black mt-4 block tracking-tighter text-2xl md:text-5xl">
+                It deserves <span class="gold-luxury-text">art.</span>
+            </span>
+
         </p>
+
     </section>
 
+    <!-- CTA -->
     <section class="pb-24 px-6 text-center">
+
         <div class="max-w-xl mx-auto">
-            <a href="https://play.google.com/store/apps/details?id=com.art.namify1" class="btn-gold-3d w-full md:w-auto px-10 py-4 rounded-full text-lg font-black block md:inline-block tracking-tighter">
-                Create Art Now
+
+            <a href="https://play.google.com/store/apps/details?id=com.art.namify1"
+               class="btn-gold-3d w-full md:w-auto px-10 py-4 rounded-full text-lg font-black block md:inline-block tracking-tighter">
+
+               Create Art Now
+
             </a>
+
             <div class="flex justify-center gap-6 mt-6 text-neutral-600 text-[8px] font-bold tracking-[0.3em] uppercase">
                 <span>100% Free</span>
                 <span>No Skills Needed</span>
             </div>
+
         </div>
+
     </section>
 
-  <footer class="py-16 border-t border-white/5 text-center bg-black">
+    <!-- FOOTER -->
+    <footer class="py-16 border-t border-white/5 text-center bg-black">
 
-    <!-- Brand -->
-    <div class="gold-luxury-text font-black text-3xl mb-3 font-heading tracking-tight">
-        Namify.art
-    </div>
+        <div class="gold-luxury-text font-black text-3xl mb-3 font-heading tracking-tight">
+            Namify.art
+        </div>
 
-    <!-- Brand Description -->
-    <p class="text-[11px] text-neutral-300 mb-10 tracking-wide">
-        AI Creative Identity Platform
-    </p>
+        <p class="text-[11px] text-neutral-300 mb-10 tracking-wide">
+            Luxury AI Creative Identity Platform
+        </p>
 
-    <!-- Footer Links -->
-    <div class="flex justify-center flex-wrap gap-3 mb-8">
+        <div class="flex justify-center flex-wrap gap-3 mb-8">
 
-        <a href="https://sites.google.com/view/namify-privacypolicy"
-           target="_blank"
-           class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
-           Privacy Policy
-        </a>
+            <a href="/privacy-policy.html"
+               class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
 
-        <a href="https://namify.art/terms"
-           target="_blank"
-           class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
-           Terms & Conditions
-        </a>
+               Privacy Policy
 
-        <a href="mailto:legal@namify.art"
-           class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
-           Contact
-        </a>
+            </a>
 
-    </div>
+            <a href="/terms.html"
+               class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
 
-    <!-- Copyright -->
-    <p class="text-[10px] text-neutral-400 leading-relaxed">
-        © 2026 Namify.art. All Rights Reserved.
-        <br>
-        Designed & Developed by Namify.art
-    </p>
+               Terms & Conditions
 
-</footer>
+            </a>
+
+            <a href="mailto:contact@namify.art"
+               class="px-5 py-2 border border-white/15 rounded-full text-[10px] text-white font-medium hover:border-yellow-400 hover:text-yellow-300 transition duration-300">
+
+               Contact
+
+            </a>
+
+        </div>
+
+        <p class="text-[10px] text-neutral-400 leading-relaxed">
+            © 2026 Namify.art. All Rights Reserved.
+            <br>
+            Designed & Developed by Namify.art
+        </p>
+
+    </footer>
 
 </body>
 </html>
